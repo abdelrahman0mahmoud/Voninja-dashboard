@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoNinja Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">VoNinja</div>
+            <ul class="nav-links">
+                <li><a href="#" data-panel="social-media-panel" class="active"><span class="icon">👥</span> Social Media</a></li>
+                <li><a href="#" data-panel="data-panel"><span class="icon">📊</span> Data</a></li>
+                <!-- <li><a href="#" data-panel="team-panel"><span class="icon">👥</span> Team</a></li> -->
+            </ul>
+            <div class="bottom-links">
+                <a href="index.html"><span class="icon">🚪</span> Log out</a>
+                <a href="#"><span class="icon">❓</span> Help center</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Social Media Panel -->
+            <div id="social-media-panel" class="panel active">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Facebook</h3>
+                        <div class="stat-value">0000</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Instagram</h3>
+                        <div class="stat-value">0000</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>TikTok</h3>
+                        <div class="stat-value">0000</div>
+                    </div>
+                </div>
+
+                <button class="generate-btn">+ Generate Code</button>
+
+                <div class="codes-container">
+                    <h3>Generated Codes</h3>
+                    <div class="code-list">
+                        <div class="code-item">
+                            <span class="code">w5735y25m</span>
+                            <button class="copy-btn">📋</button>
+                            <span class="time">3 days, 16 hours</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code">jk9k3mk2rg</span>
+                            <button class="copy-btn">📋</button>
+                            <span class="time">5 days, 12 hours</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code">sdfrnsdfksf</span>
+                            <button class="copy-btn">📋</button>
+                            <span class="time">12 hours</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code">dlksnksdtpsl</span>
+                            <button class="copy-btn">📋</button>
+                            <span class="time">47 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Panel -->
+            <div id="data-panel" class="panel">
+                <div class="tab-buttons">
+                    <button class="tab-btn active">Users</button>
+                    <button class="tab-btn">Levels</button>
+                    <button class="tab-btn">Lessons</button>
+                    <button class="tab-btn">Challenges</button>
+                    <button class="tab-btn">Tasks</button>
+                </div>
+
+                <div class="users-table">
+                    <h2>Users (15,343)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>👤 Person</th>
+                                <th>📧 Email</th>
+                                <th>🎯 Points</th>
+                                <th>📊 Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>John Doe</td><td>john@example.com</td><td>1500</td><td>Gold</td></tr>
+                            <tr><td>Jane Smith</td><td>jane@example.com</td><td>2000</td><td>Platinum</td></tr>
+                            <tr><td>Bob Johnson</td><td>bob@example.com</td><td>1200</td><td>Silver</td></tr>
+                            <tr><td>Alice Brown</td><td>alice@example.com</td><td>1800</td><td>Gold</td></tr>
+                            <tr><td>Charlie Wilson</td><td>charlie@example.com</td><td>2200</td><td>Diamond</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination">
+                        <button>Previous</button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>10</button>
+                        <button>Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Panel -->
+            <div id="team-panel" class="panel">
+                <h2>Team Management</h2>
+                <!-- Team content would go here -->
+            </div>
+        </main>
+    </div>
+    <script src="js/navigation.js"></script>
+</body>
+</html>
